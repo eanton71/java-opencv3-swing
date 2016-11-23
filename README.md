@@ -9,3 +9,8 @@ Thumbs up for Huiying S.
 This project is based on Huiying's blog post http://computervisionandjava.blogspot.fi/2013/10/java-opencv-webcam.html
 
 I've fixed the the Mat to BufferedImage part where the output image was blueish.
+
+## Run the example
+
+1. Modify the OpenCV path in needed to `build.gradle`
+2. Call `./gradlew run`
