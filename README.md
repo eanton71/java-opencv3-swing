@@ -14,3 +14,10 @@ I've fixed the the Mat to BufferedImage part where the output image was blueish.
 
 1. Modify the OpenCV path in needed to `build.gradle`
 2. Call `./gradlew run`
+
+## Blog post
+
+[Rapid Programmer - OpenCV 3 and plain Java][rapidprogrammer]
+
+
+[rapidprogrammer]: http://rapidprogrammer.com/how-to-access-camera-with-opencv-and-java
