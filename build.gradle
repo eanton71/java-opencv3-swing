@@ -1,0 +1,23 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+// Modify the OpenCV folder is needed
+def myOpenCV = '/usr/local/opt/opencv3/share/OpenCV/java/'
+
+dependencies {
+    // OpenCV
+    // If you don't have OpenCV jar in the same folder, set the folder here
+    compile fileTree(dir: myOpenCV, include: ['*.jar'])
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
+
+def myMainClass = 'com.rapidprogrammer.javaopencv3swing.MyFrame'
+// Set the main class to gradle run
+mainClassName = myMainClass
+
+// Pass the path to gradle run
+run {
+    systemProperty "java.library.path", myOpenCV
+}
